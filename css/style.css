@@ -21,20 +21,19 @@ body, html {
 
 .image-bg {
     padding: 40px;
-    background-image: url("https://meespalacecinemas.com/wp-content/uploads/2018/11/Background-Narrow.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+    background-image: url("https://s3.amazonaws.com/gumroad/files/9511543414889/b4e03368e7ce4fb39217c7de29d57a2b/original/Background-Narrow.jpg");
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 .card-film {
     border: 2px solid darkred;
     color:black;
-    background-color: white;
+    /* background-color: white; */
     width: 60vw;
     border-radius: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding:15px;
 
 }
 
@@ -42,3 +41,22 @@ body, html {
     from {left: 600px;}
     to {left: 0px;}
   }
+
+.minicard {
+    min-height: 45px;
+}
+
+.minicard div {
+    display: flex;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+#carousel {
+    margin-top: 5px;
+}
+
+#carousel img{
+    max-height: 100px;
+    width: auto;
+}
