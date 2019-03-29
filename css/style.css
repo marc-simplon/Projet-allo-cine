@@ -8,23 +8,37 @@
     font-size: 3rem;
 }
 
+.header h1 {
+    position :relative;
+    -webkit-animation: mymove 1.5s;
+    animation: mymove 1.5s;
+}
+
 body, html {
     height: 100%;
+ 
 }
 
 .image-bg {
     padding: 40px;
-    background-image: url("https://s3.amazonaws.com/gumroad/files/9511543414889/b4e03368e7ce4fb39217c7de29d57a2b/original/Background-Narrow.jpg");
+    background-image: url("https://meespalacecinemas.com/wp-content/uploads/2018/11/Background-Narrow.jpg");
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
 .card-film {
+    border: 2px solid darkred;
     color:black;
     background-color: white;
     width: 60vw;
     border-radius: 20px;
+    margin-bottom: 15px;
 
 }
+
+@keyframes mymove {
+    from {left: 600px;}
+    to {left: 0px;}
+  }
