@@ -5,45 +5,73 @@
     <meta charset="UTF-8">
     <title>Mini Allo-ciné</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
 </head>
 
 <body>
     <script src="./data/moovies.json.js" charset="utf-8"></script>
 
+
     <script>
      console.log(data[0]['Images'][0])
     </script>
     
-    <script>
-     var i = 0
-     document.writeln("<div>");
-     
-     for ( var i = 0; i < data.length; i++) {
-	 document.writeln("<h1>" + data[i].Title + "<\/h1>");
+    <header>
+        <div class="header">
+            <h1>Projet Mini Allo-ciné !</h1>
+        </div>
+    </header>
 
-	 /* var obj = graph.sparkData[i];
-	    console.log(obj);-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
-	    var crunchifyName;
-	    var crunchifyValue;
-	    
-	    document.writeln("<td>");
-	    document.writeln("<table border='0'  width=100 >");
-	    
-	    for ( var key in obj) {
-	    crunchifyName = key;
-	    crunchifyValue = obj[key].toString();
-	    +document.writeln("<tr><td><B>" + crunchifyName
-	    + ":  </B></td><td width=50>" + crunchifyValue
-	    + "</td></tr>");
-	    document.writeln("</table>");
-	    document.writeln("</td>"); */
+    <div class="image-bg" class="img-responsive" alt="Allo-ciné">
+
+	<script>
+	 var i = 0
+	 document.writeln("<div>");
+	 
+	 for ( var i = 0; i < data.length; i++) {
+	     document.writeln("<h1>" + data[i].Title + "<\/h1>");
+
+	     /* var obj = graph.sparkData[i];
+		console.log(obj);-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+		var crunchifyName;
+		var crunchifyValue;
+		
+		document.writeln("<td>");
+		document.writeln("<table border='0'  width=100 >");
+		
+		for ( var key in obj) {
+		crunchifyName = key;
+		crunchifyValue = obj[key].toString();
+		+document.writeln("<tr><td><B>" + crunchifyName
+		+ ":  </B></td><td width=50>" + crunchifyValue
+		+ "</td></tr>");
+		document.writeln("</table>");
+		document.writeln("</td>"); */
 	     
 	 }
-     document.writeln("<\/div>");
-    </script>
+	 document.writeln("<\/div>");
+	</script>
+	
 
+        <div class="container card-film">
+            <div class="row">
+                <div class="col-6">
+                    IMAGE
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eligendi!</p>
+                        <a href="#" class="btn btn-primary">Lorem</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -54,6 +82,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="css/style.css"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

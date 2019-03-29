@@ -1,0 +1,30 @@
+.header {
+    font-family: 'Permanent Marker', cursive;
+    padding: 20px;
+    text-align: center;
+    background-color: darkred;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-size: 3rem;
+}
+
+body, html {
+    height: 100%;
+}
+
+.image-bg {
+    padding: 40px;
+    background-image: url("https://s3.amazonaws.com/gumroad/files/9511543414889/b4e03368e7ce4fb39217c7de29d57a2b/original/Background-Narrow.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-film {
+    color:black;
+    background-color: white;
+    width: 60vw;
+    border-radius: 20px;
+
+}
