@@ -1,4 +1,4 @@
-.header {
+header {
     font-family: 'Permanent Marker', cursive;
     padding: 20px;
     text-align: center;
@@ -8,7 +8,7 @@
     font-size: 3rem;
 }
 
-.header h1 {
+header h1 {
     position :relative;
     -webkit-animation: mymove 1.5s;
     animation: mymove 1.5s;
@@ -45,6 +45,8 @@ body, html {
 
 .minicard {
     min-height: 45px;
+    display: flex;
+    justify-content: center;
 }
 
 .minicard div {
@@ -73,4 +75,11 @@ body, html {
     border-radius: 15px;
     background-color: darkred;
 
+}
+
+.carousel img {
+    max-height: 150px;
+    object-fit: contain;
+    margin: 10px;
+    border-radius: 10px;
 }

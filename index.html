@@ -7,33 +7,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/main.css">
+
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 </head>
 
 <body>
     <script src="./data/moovies.json.js" charset="utf-8"></script>
-
-
-    <script>
-        console.log(data[0]['Images'][0])
-    </script>
-
+    <!-- <script src="js/mains.js" charset="utf-8"></script> -->
+    
     <header>
         <div class="header">
             <h1>Allo-ciné</h1>
         </div>
     </header>
 
-    <div class="img-responsive image-bg">
+    <main class="image-bg" id="main">
+	<!-- <script>
+	     var element = document.getElementById(main);
 
-	<script>
-	 
-	 var i = 0
-	 for ( var i = 0; i < data.length; i++) {
-	     console.log(data[i].Images[1] + "hello")
+	     var i = 0;
+	     for ( i = 0; i < data.length; i++) {
+	     console.log(data[i].Images[1] + "hello");
 	     document.writeln("<div class=\"container card card-film\">");
+	     // element.innerHTML("<div class=\"container card card-film\">");
 	     document.writeln("<div class=\"row\">");
 
 	     document.writeln("<div class=\"col-md-3 col-sm-12 cont-poster\">");
@@ -53,24 +50,24 @@
 	     document.writeln("</div>");
 	     
 	     if  ( data[i].Director !=  undefined && data[i].Director != "N/A" ) {
-		 document.writeln("<div class=\"card text-white bg-primary text-center\">");
-		 console.log("hello");
-		 document.writeln(data[i].Director);
-		 document.writeln("</div>");
+	     document.writeln("<div class=\"card text-white bg-primary text-center\">");
+	     console.log("hello");
+	     document.writeln(data[i].Director);
+	     document.writeln("</div>");
 	     }
 
 
 	     if  ( data[i].Runtime !=  undefined ) {
-		 document.writeln("<div class=\"card text-white bg-primary text-center\">");
-		 document.writeln(data[i].Runtime);
-		 document.writeln("</div>");
+	     document.writeln("<div class=\"card text-white bg-primary text-center\">");
+	     document.writeln(data[i].Runtime);
+	     document.writeln("</div>");
 
 	     }
 
 	     if  ( data[i].imdbRating !=  undefined ) {
-		 document.writeln("<div class=\"card text-white bg-primary text-center\">");
-		 document.writeln(data[i].imdbRating + " ٭");
-		 document.writeln("</div>");
+	     document.writeln("<div class=\"card text-white bg-primary text-center\">");
+	     document.writeln(data[i].imdbRating + " ٭");
+	     document.writeln("</div>");
 
 	     }
 	     document.writeln("</div>");
@@ -82,10 +79,10 @@
 	     document.writeln("<img class=\"d-block\" src=\"" + data[i].Images[0] + "\" alt=\"" + data[i].Title + "\">");
 	     document.writeln("</div>");
 	     data[i].Images.forEach(function(e) {
-		 console.log(e + "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBXS");
-		 document.writeln("<div class=\"carousel-item\">");
-		 document.writeln("<img class=\"d-block\" src=\"" + e + "\" alt=\"" + data[i].Title + "\">");
-		 document.writeln("</div>");
+	     console.log(e + "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBXS");
+	     document.writeln("<div class=\"carousel-item\">");
+	     document.writeln("<img class=\"d-block\" src=\"" + e + "\" alt=\"" + data[i].Title + "\">");
+	     document.writeln("</div>");
 	     });
 
 	     document.writeln("</div>");
@@ -100,59 +97,12 @@
 	     document.writeln("</div>");
 
 
-	 }
+	     }
 
+	     </script>
+	-->
+    </main>
 
-	</script>
-
-
-        <div class="container card card-film">
-            <div class="row">
-		<div class="col-3">
-		    <img alt="" src="https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-		</div>
-		<div class=" col-9 inner-card-right">
-		    <div class="card-body">
-			<h3 class="card-title">Lorem Ipsum</h3>
-			<p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eligendi!</p>
-			<p>Mauris ac felis vel velit tristique imperdiet.  Nunc aliquet, augue nec adipiscing interdum,
-			    Nullam tristique diam sl.ligula.  </p>
-
-			<div class="row minicard text-center">
-			    <div class="card text-white bg-primary">
-				Jmaes cmaeron
-			    </div>
-			    <div class="card text-white bg-primary text-center">
-				2009
-			    </div>
-
-			    <div class="card text-white bg-primary text-center">
-				162 min
-			    </div>
-
-			    <div class="card text-white bg-primary text-center">
-				7.9 ٭
-			    </div>
-
-			    <div></div>
-			    
-			    <div id="carousel" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-				    <div class="carousel-item active">
-					<img class="d-block " src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg" alt="First slide">
-				    </div>
-				    <div class="carousel-item">
-					<img class="d-block " src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzM2MDk3MTcyMV5BMl5BanBnXkFtZTcwNjg0MTUzNA@@._V1_SX1777_CR0,0,1777,999_AL_.jpg" alt="Second slide">
-				    </div>
-				</div>
-			    </div>
-			</div>
-		    </div>
-		</div>
-            </div>
-        </div>
-    </div>
-    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -163,8 +113,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="css/style.css"></script>
-    <script src="js/main.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 </html>
